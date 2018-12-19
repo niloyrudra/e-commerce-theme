@@ -106,8 +106,8 @@ gulp.task( 'imagemin', (done) => {
 // gulp.task('watch', function() {
 //     gulp.watch( styleWatch, gulp.series( 'style' ) );
 // });
-// gulp.task('watch', function() {
-//     gulp.watch( styleWatch, gulp.series( 'style' ) );
-//     gulp.watch( jsWatch, gulp.series( 'js' ) );
-//     gulp.watch( imgSRC, gulp.series( 'imagemin' ) );
-// });
+gulp.task('watch', function() {
+    gulp.watch( styleWatch, gulp.series( 'style' ) );
+    gulp.watch( jsWatch, gulp.series( 'js' ) );
+    gulp.watch( imgSRC, gulp.series( 'imagemin' ) );
+});

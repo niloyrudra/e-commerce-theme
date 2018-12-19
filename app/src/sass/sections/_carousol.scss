@@ -1,0 +1,41 @@
+.ecm-showcase {
+    position: relative;
+    height: 670px;
+    @include tx-shd;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+
+    z-index: 2;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        height: 80px;
+        background-color: crimson;
+        box-sizing: border-box;
+        z-index: -1;
+
+        box-shadow: 0 35px 30px rgba(0,0,0,0.5);
+
+    }
+
+    &::before {
+        left: 0;
+        right: 25%;
+        transform: rotate(-1.8deg);
+    }
+    &::after {
+        left: 25%;
+        right: 0;
+        transform: rotate(1.8deg);
+    }
+
+    .carousel-inner {
+        height: 100%;
+        .carousel-item {
+            height: 100%;
+        }
+    }
+}

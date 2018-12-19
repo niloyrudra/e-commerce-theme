@@ -1,15 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
+
 @import './modules/variables';
+@import './modules/mixin';
+@import './modules/generic.scss';
 
-body, html {
-    position: relative;
-    width: 100%;
-    font-size: 14px;
-    color: $dg;
-    background-color: bisque;
-}
+@import './sections/header';
+@import './sections/carousol';
 
-*, :before, :after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
