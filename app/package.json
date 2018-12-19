@@ -1,0 +1,51 @@
+{
+  "name": "e-commerce-theme",
+  "version": "1.0.0",
+  "description": "E-commerce theme init",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niloyrudra/e-commerce-theme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "e-commerce",
+    "theme",
+    "responsive",
+    "woocommerce",
+    "plugin"
+  ],
+  "author": "Niloy Rudra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niloyrudra/e-commerce-theme/issues"
+  },
+  "homepage": "https://github.com/niloyrudra/e-commerce-theme#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "code-prettify": "^0.1.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

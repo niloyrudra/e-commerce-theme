@@ -1,0 +1,15 @@
+@import './modules/variables';
+
+body, html {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    color: $dg;
+    background-color: bisque;
+}
+
+*, :before, :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
