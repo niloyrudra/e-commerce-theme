@@ -46,7 +46,6 @@
 
     /* Section Two */
     .entry-title-wrapper{
-        // max-width: 70%;
         margin: 0 auto 2.4em;
         padding: 0.2em 4.2em;
         text-align: center;
@@ -54,11 +53,8 @@
         border-top: 2px solid $pink;
 
         h2.entry-title {
-            // border-bottom: 2px solid $pink;
             font-style: italic;
             font-weight: 400;
-            // text-align: center;
-            // border-top: 2px solid $pink;
             line-height: 40px;
             padding-bottom: 5px;
             padding-top: 5px;
@@ -158,6 +154,10 @@
                 display: grid;
                 grid-gap: 18px;
 
+                @media (max-width:768px) {
+                    grid-template-columns: 1fr;
+                }
+
                 .grid-box {
                     border: 1px solid rgba(163,33,127,0.26);
                     text-align: center;
@@ -204,6 +204,11 @@
 
             .product-wrapper {
                 grid-template-columns: repeat( 4, 1fr );
+
+                @media (max-width:768px) {
+                    grid-template-columns: 1fr;
+                }
+
             }
 
         }
@@ -214,6 +219,10 @@
             .product-wrapper {
                 grid-template-columns: repeat( 3, 1fr );
                 grid-gap: 22px;
+
+                @media (max-width:768px) {
+                    grid-template-columns: 1fr;
+                }
 
             }
 

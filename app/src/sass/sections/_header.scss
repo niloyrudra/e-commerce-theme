@@ -58,9 +58,41 @@ header.header-container {
         background-color: $w;
         box-shadow: 0 -1px 3px rgba(0,0,0,0.15);
 
-        img.top-nav-shadow {
-            position: absolute;
+        .container {
+            position: relative;
+
+            img.top-nav-shadow {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+
         }
+
+        @media (max-width:768px) {
+            #main-nav{
+                display: none;
+            }.list-group {
+                display: none;
+            }
+
+            .col-md-9 {
+                color: $primary;
+                padding-top: 2em;
+                font-weight: 800;
+                &::after {
+                    content: 'MENU';
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+
 
 
         .row {
