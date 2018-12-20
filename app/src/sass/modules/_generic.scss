@@ -6,13 +6,26 @@
 }
 
 
-body, html, #wrapper {
+body, html {
     position: relative;
-    font-family: $ff;
+    font-family: $ff-os;
     width: 100%;
     font-size: 14px;
     color: $primary;
-    // overflow-x: hidden; 
+}
+
+body, input, textarea {
+    font: 14px 'Open Sans',sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 23px;
+    color: $primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $ff-rw;
+    font-weight: normal;
+    color: $primary;
 }
 
 ul, ol {
@@ -22,4 +35,27 @@ ul, ol {
 a {
     color: $primary;
     display: block;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    padding-top: 4em;
+}
+
+section {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 3em 0;
 }

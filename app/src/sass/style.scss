@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,800');
 
 @import './modules/variables';
 @import './modules/mixin';
-@import './modules/generic.scss';
+@import './modules/generic';
 
 @import './sections/header';
 @import './sections/carousol';
+@import './sections/section-one';
 

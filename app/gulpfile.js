@@ -26,7 +26,7 @@ var buffer = require( 'vinyl-buffer' );
 
 var styleSRC = 'src/sass/style.scss';
 var styleDIST = './assets/css';
-var styleWatch = 'src/scss/**/*.scss';
+var styleWatch = 'src/sass/**/*.scss';
 
 var js = 'main.js';
 var jsSRC = 'src/js/';
@@ -106,6 +106,7 @@ gulp.task( 'imagemin', (done) => {
 // gulp.task('watch', function() {
 //     gulp.watch( styleWatch, gulp.series( 'style' ) );
 // });
+
 gulp.task('watch', function() {
     gulp.watch( styleWatch, gulp.series( 'style' ) );
     gulp.watch( jsWatch, gulp.series( 'js' ) );
