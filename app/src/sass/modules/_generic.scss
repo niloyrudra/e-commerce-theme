@@ -46,8 +46,26 @@ h2 {
     font-weight: bold;
 }
 
+h3:not(.widget-title) {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 18px;
+    font-style: normal;
+}
+
 ul, ol {
-    list-style-type: none;;
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    list-style-position: inside;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
 a {
@@ -64,6 +82,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     background: transparent;
 }
+
+article, .widget, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
 
 #main {
     position: relative;
