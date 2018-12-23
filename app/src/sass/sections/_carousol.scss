@@ -37,19 +37,64 @@
 
         .carousel-item {
             height: 100%;
+
+            img {
+                &.img-right-top {
+                    position: absolute;
+                    top: 0;
+                    width: 213px;
+                    height: 373px;
+                    right: 135px;
+                    transform: translateX(100px);
+                    opacity: 0;
+                    animation-delay: 1s;
+                }
+
+                &.img-left {
+                    position: absolute;
+                    top: 0;
+                    width: 521px;
+                    height: 580px;
+                    left: 135px;
+                    transform: translateX(-120px);
+                    opacity: 0;
+                    animation-delay: 1s;
+                }
+
+                &.img-right-top {
+                    animation: none; 
+                }
+
+                &.img-left {
+                    animation: none; 
+                }
+
+                @media (max-width: 768px) {
+                    &.img-right-top, &.img-left { display: none; }
+                }
+
+            }
+
+            &.active {
+                img {
+                    &.img-right-top {
+                        animation: fadeInLeft 700ms  ease-in-out forwards 0.6s; 
+                    }
+
+                    &.img-left {
+                        animation: fadeInRight 700ms  ease-in-out forwards 0.6s; 
+                    }
+                }
+            }
         }
 
     }
 }
 
 .ecm-section.last {
-    // background: #eee url(/assets/images/2CK_OfficeImage-_hi-res.jpg) !important;
     float: left;
     width: 100%;
-    // text-align: center;
-    padding: 80px 0px 80px 0px;
-    // background: #eee url(/wp-content/themes/hoxa/assets/images/parallax-bg9.jpg);
-    background-attachment: fixed;
+    padding: 80px 0px 80px 0px;background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
     background-size: cover;
@@ -83,4 +128,31 @@
         }
     }
 
+}
+
+.carousel-inner {
+    overflow-x: hidden;
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0.9;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0.9;
+    }
 }
