@@ -45,9 +45,8 @@
                     width: 213px;
                     height: 373px;
                     right: 135px;
-                    transform: translateX(100px);
+                    transform: translateX(135px);
                     opacity: 0;
-                    animation-delay: 1s;
                 }
 
                 &.img-left {
@@ -58,7 +57,6 @@
                     left: 135px;
                     transform: translateX(-120px);
                     opacity: 0;
-                    animation-delay: 1s;
                 }
 
                 &.img-right-top {
@@ -78,11 +76,11 @@
             &.active {
                 img {
                     &.img-right-top {
-                        animation: fadeInLeft 700ms  ease-in-out forwards 0.6s; 
+                        animation: fadeInLeft 3700ms  ease-in-out forwards 500ms; 
                     }
 
                     &.img-left {
-                        animation: fadeInRight 700ms  ease-in-out forwards 0.6s; 
+                        animation: fadeInRight 1000ms  ease-in-out forwards 500ms; 
                     }
                 }
             }
@@ -137,22 +135,57 @@
 
 @keyframes fadeInLeft {
     0% {
-        transform: translateX(100px);
+        transform: translateX(135px);
         opacity: 0;
     }
-    100% {
+    25% {
         transform: translateX(0);
         opacity: 0.9;
+    }
+    75% {
+        transform: translateX(0);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateX(135px);
+        opacity: 0;
     }
 }
 
 @keyframes fadeInRight {
     0% {
-        transform: translateX(-120px);
+        transform: translateX(-135px);
         opacity: 0;
     }
+    // 25% {
+    //     transform: translateX(0);
+    //     opacity: 0.9;
+    // }
+    // 75% {
+    //     transform: translateX(0);
+    //     opacity: 0.9;
+    // }
     100% {
         transform: translateX(0);
         opacity: 0.9;
     }
 }
+// @keyframes fadeInRight {
+//     0% {
+//         transform: translateX(-135px);
+//         opacity: 0;
+//     }
+//     25% {
+//         transform: translateX(0);
+//         opacity: 0.9;
+//     }
+//     75% {
+//         transform: translateX(0);
+//         opacity: 0.9;
+//     }
+//     100% {
+//         transform: translateX(-135px);
+//         opacity: 0;
+//     }
+// }
+
