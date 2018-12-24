@@ -312,7 +312,7 @@ section:nth-last-child(1) {
             margin: 0;
 
             .rw-words {
-                margin-top: -30px;
+                // margin-top: -30px;
                 display: inline;
                 text-indent: 95px;
 
@@ -411,8 +411,11 @@ section:nth-last-child(1) {
         // filter: drop-shadow( -5px -5px 5px #000 );
 
         -webkit-transition-property: color, text;
+        transition-property: color, text;
         -webkit-transition-duration: 0.25s, 0.25s;
+        transition-duration: 0.25s, 0.25s;
         -webkit-transition-timing-function: linear, ease-in;
+        transition-timing-function: linear, ease-in;
         -moz-transition-property: color, text;
         -moz-transition-duration: 0.25s;
         -moz-transition-timing-function: linear, ease-in;
@@ -439,19 +442,6 @@ section:nth-last-child(1) {
         outline: 0 !important;
     }
 
-}
-
-a.scrollup {
-    width: 40px;
-    height: 40px;
-    opacity: 1;
-    position: fixed;
-    bottom: 22px;
-    right: 20px;
-    display: inline;
-    text-indent: -9999px;
-    background: url(assets/images/scroll-top-arrow.png) no-repeat left top;
-    z-index: 999;
 }
 
 .scrollTo {
